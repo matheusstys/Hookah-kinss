@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palette — lounge noturno: noite profunda, brasa âmbar, brilho violeta */
+  --color-night: #0d0a12;
+  --color-night-2: #15101c;
+  --color-panel: #1a1422;
+  --color-line: #2c2438;
+  --color-ash: #b3aabf;
+  --color-cream: #f3ebdf;
+  --color-ember: #e6a23c;
+  --color-ember-deep: #c9802a;
+  --color-glow: #a06bd6;
+
+  /* Type */
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Manrope", system-ui, sans-serif;
+
+  /* Motion */
+  --animate-drift: drift 18s ease-in-out infinite;
+  --animate-drift-slow: drift 26s ease-in-out infinite;
+  --animate-ember: ember 5s ease-in-out infinite;
+}
+
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(6%, -8%) scale(1.1); }
+  66% { transform: translate(-5%, 5%) scale(0.95); }
+}
+@keyframes ember {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.9; }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-night);
+    color: var(--color-cream);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--color-ember); color: var(--color-night); }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; letter-spacing: 0; }
+}
+
+@layer utilities {
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .reveal.in { opacity: 1; transform: none; }
+  .eyebrow { font-family: var(--font-body); font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; }
+  .no-bar { scrollbar-width: none; -ms-overflow-style: none; }
+  .no-bar::-webkit-scrollbar { display: none; }
+  /* subtle film grain */
+  .grain::before {
+    content: "";
+    position: fixed; inset: 0; z-index: 1; pointer-events: none; opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
