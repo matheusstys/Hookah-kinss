@@ -1,5 +1,4 @@
 import { config } from '../config'
-import { Flame } from '../icons'
 
 export default function AgeGate({
   onConfirm,
@@ -12,13 +11,11 @@ export default function AgeGate({
 }) {
   return (
     <div className="fixed inset-0 z-[100] grid place-items-center bg-night px-6">
-      <div className="pointer-events-none absolute left-1/2 top-1/3 h-72 w-72 -translate-x-1/2 rounded-full bg-ember/20 blur-[90px]" />
+      <div className="pointer-events-none absolute left-1/2 top-1/4 h-80 w-80 -translate-x-1/2 rounded-full bg-neon/10 blur-[100px]" />
+      <div className="pointer-events-none absolute left-1/4 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-ember/10 blur-[100px]" />
       <div className="relative w-full max-w-md text-center">
-        <span className="mx-auto grid h-14 w-14 place-items-center rounded-full border border-line text-ember">
-          <Flame className="h-7 w-7" />
-        </span>
-        <p className="eyebrow mt-6 text-[0.7rem] text-ember">{config.tagline}</p>
-        <h1 className="mt-2 font-display text-4xl text-cream">{config.name}</h1>
+        <img src="/logo.png" alt={config.name} className="mx-auto h-28 w-auto animate-neon-pulse" />
+        <p className="eyebrow mt-6 text-[0.7rem] text-ash">{config.tagline}</p>
 
         {!denied ? (
           <>
@@ -28,7 +25,7 @@ export default function AgeGate({
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
               <button
                 onClick={onConfirm}
-                className="rounded-full bg-ember px-7 py-3.5 font-semibold text-night transition hover:bg-ember-deep"
+                className="rounded-full bg-neon px-7 py-3.5 font-semibold text-night transition hover:bg-neon-deep"
               >
                 Sim, tenho 18+
               </button>

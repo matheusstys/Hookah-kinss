@@ -24,9 +24,9 @@ export default function Experiencia() {
           {features.map((f) => (
             <div
               key={f.title}
-              className="group rounded-2xl border border-line bg-night-2/60 p-6 transition hover:border-ember/50"
+              className="group rounded-2xl border border-line bg-night-2/60 p-6 transition hover:border-neon/50"
             >
-              <span className="grid h-12 w-12 place-items-center rounded-full border border-line text-ember transition group-hover:border-ember/60">
+              <span className="grid h-12 w-12 place-items-center rounded-full border border-line text-neon transition group-hover:border-neon/60">
                 {f.icon}
               </span>
               <h3 className="mt-5 font-display text-2xl text-cream">{f.title}</h3>

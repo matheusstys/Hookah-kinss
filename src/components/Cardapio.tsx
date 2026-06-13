@@ -30,7 +30,7 @@ const cols = [
 export default function Cardapio() {
   const head = useReveal()
   return (
-    <section className="border-y border-line bg-night-2/40 py-20 sm:py-28">
+    <section id="cardapio" className="border-y border-neon/15 bg-night-2/40 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div ref={head.ref} className={`reveal ${head.visible ? 'in' : ''} mb-12 max-w-2xl`}>
           <p className="eyebrow mb-3 text-xs text-ember">no cardápio</p>

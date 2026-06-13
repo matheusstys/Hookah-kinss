@@ -3,9 +3,9 @@ import Carousel from './Carousel'
 
 const shots = [
   { label: 'O salão', tint: 'from-ember/30' },
-  { label: 'Balcão & drinks', tint: 'from-glow/30' },
+  { label: 'Balcão & drinks', tint: 'from-neon/30' },
   { label: 'Mesas reservadas', tint: 'from-ember/25' },
-  { label: 'Noites de DJ', tint: 'from-glow/25' },
+  { label: 'Noites de DJ', tint: 'from-neon/25' },
   { label: 'Área externa', tint: 'from-ember/30' },
 ]
 
@@ -26,7 +26,7 @@ function Tile({ label, tint }: { label: string; tint: string }) {
 export default function Galeria() {
   const head = useReveal()
   return (
-    <section className="py-20 sm:py-28">
+    <section id="galeria" className="py-20 sm:py-28">
       <div ref={head.ref} className={`reveal ${head.visible ? 'in' : ''} mx-auto mb-12 max-w-6xl px-5 sm:px-8`}>
         <p className="eyebrow mb-3 text-xs text-ember">o lugar</p>
         <h2 className="max-w-2xl font-display text-4xl leading-tight text-cream sm:text-5xl">

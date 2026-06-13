@@ -1,16 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  /* Palette — lounge noturno: noite profunda, brasa âmbar, brilho violeta */
-  --color-night: #0d0a12;
-  --color-night-2: #15101c;
-  --color-panel: #1a1422;
-  --color-line: #2c2438;
-  --color-ash: #b3aabf;
-  --color-cream: #f3ebdf;
-  --color-ember: #e6a23c;
-  --color-ember-deep: #c9802a;
-  --color-glow: #a06bd6;
+  /* Palette — Hookah Kinss: preto puro, neon azul, neon laranja */
+  --color-night: #04040A;
+  --color-night-2: #09090F;
+  --color-panel: #0D0D18;
+  --color-line: #1C1C2C;
+  --color-ash: #8888AA;
+  --color-cream: #F0F0FF;
+  --color-ember: #FF9200;
+  --color-ember-deep: #D97A00;
+  --color-neon: #00C2FF;
+  --color-neon-deep: #0096CC;
 
   /* Type */
   --font-display: "Cormorant Garamond", Georgia, serif;
@@ -20,6 +21,7 @@
   --animate-drift: drift 18s ease-in-out infinite;
   --animate-drift-slow: drift 26s ease-in-out infinite;
   --animate-ember: ember 5s ease-in-out infinite;
+  --animate-neon-pulse: neon-pulse 3s ease-in-out infinite;
 }
 
 @keyframes drift {
@@ -30,6 +32,10 @@
 @keyframes ember {
   0%, 100% { opacity: 0.5; }
   50% { opacity: 0.9; }
+}
+@keyframes neon-pulse {
+  0%, 100% { filter: drop-shadow(0 0 6px #00C2FF) drop-shadow(0 0 14px #00C2FF40); }
+  50% { filter: drop-shadow(0 0 12px #00C2FF) drop-shadow(0 0 28px #00C2FF60); }
 }
 
 @layer base {

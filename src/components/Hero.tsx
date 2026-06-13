@@ -5,8 +5,8 @@ export default function Hero() {
   return (
     <header className="relative overflow-hidden">
       {/* drifting ambient glows */}
-      <div className="animate-drift pointer-events-none absolute -left-20 top-10 h-[26rem] w-[26rem] rounded-full bg-ember/20 blur-[110px]" />
-      <div className="animate-drift-slow pointer-events-none absolute right-0 top-40 h-[22rem] w-[22rem] rounded-full bg-glow/20 blur-[120px]" />
+      <div className="animate-drift pointer-events-none absolute -left-20 top-10 h-[26rem] w-[26rem] rounded-full bg-ember/15 blur-[110px]" />
+      <div className="animate-drift-slow pointer-events-none absolute right-0 top-40 h-[22rem] w-[22rem] rounded-full bg-neon/15 blur-[120px]" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-night to-transparent" />
 
       <div className="relative mx-auto max-w-6xl px-5 pt-36 pb-20 sm:px-8 sm:pt-44 sm:pb-28">
@@ -26,7 +26,7 @@ export default function Hero() {
             href={wa('Olá! Quero reservar uma mesa na Hookah Kinss.')}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 rounded-full bg-ember px-7 py-4 font-semibold text-night transition hover:bg-ember-deep"
+            className="group inline-flex items-center gap-2 rounded-full bg-neon px-7 py-4 font-semibold text-night transition hover:bg-neon-deep"
           >
             Reservar minha mesa
             <Arrow className="h-5 w-5 transition-transform group-hover:translate-x-1" />

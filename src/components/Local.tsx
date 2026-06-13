@@ -40,7 +40,7 @@ export default function Local() {
           </a>
         </div>
 
-        <div className="flex flex-col justify-center rounded-3xl border border-ember/30 bg-gradient-to-br from-ember/15 via-night-2 to-night p-8 text-center sm:p-10">
+        <div className="flex flex-col justify-center rounded-3xl border border-neon/30 bg-gradient-to-br from-neon/10 via-night-2 to-night p-8 text-center sm:p-10">
           <h3 className="font-display text-3xl text-cream">Bora marcar?</h3>
           <p className="mt-3 text-ash">
             Reserve sua mesa pelo WhatsApp e chegue só pra aproveitar.
@@ -49,7 +49,7 @@ export default function Local() {
             href={wa('Olá! Quero reservar uma mesa na Hookah Kinss.')}
             target="_blank"
             rel="noopener noreferrer"
-            className="mx-auto mt-7 inline-flex items-center gap-2 rounded-full bg-ember px-7 py-4 font-semibold text-night transition hover:bg-ember-deep"
+            className="mx-auto mt-7 inline-flex items-center gap-2 rounded-full bg-neon px-7 py-4 font-semibold text-night transition hover:bg-neon-deep"
           >
             Reservar pelo WhatsApp
           </a>

@@ -1,14 +1,13 @@
 import { config, ig, mapsUrl, wa } from '../config'
-import { Flame, Insta, Pin, Whats } from '../icons'
+import { Insta, Pin, Whats } from '../icons'
 
 export default function Footer() {
   return (
-    <footer className="border-t border-line bg-night-2/60">
+    <footer className="border-t border-neon/20 bg-night-2/60">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-5 py-12 sm:px-8 md:flex-row md:items-start md:justify-between">
         <div className="max-w-xs">
-          <a href="#" className="flex items-center gap-2.5">
-            <Flame className="h-5 w-5 text-ember" />
-            <span className="font-display text-2xl text-cream">{config.name}</span>
+          <a href="#" className="flex items-center">
+            <img src="/logo.png" alt={config.name} className="h-14 w-auto" />
           </a>
           <p className="mt-3 text-sm leading-relaxed text-ash">
             {config.tagline} · {config.city}. {config.hours}.
@@ -26,7 +25,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="border-t border-line">
+      <div className="border-t border-neon/10">
         <div className="mx-auto max-w-6xl px-5 py-5 sm:px-8">
           <p className="text-xs leading-relaxed text-ash/70">
             Entrada e consumo permitidos apenas para maiores de 18 anos. O consumo de bebidas
