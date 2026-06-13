@@ -20,30 +20,29 @@ export default function AgeGate({
         {!denied ? (
           <>
             <p className="mt-6 text-ash">
-              Este é um ambiente para maiores de idade. Você tem 18 anos ou mais?
+              Ei! Aqui é ambiente 18+. Você já tem 18 anos?
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
               <button
                 onClick={onConfirm}
                 className="rounded-full bg-neon px-7 py-3.5 font-semibold text-night transition hover:bg-neon-deep"
               >
-                Sim, tenho 18+
+                Sim, tô dentro
               </button>
               <button
                 onClick={onDeny}
                 className="rounded-full border border-line px-7 py-3.5 font-semibold text-ash transition hover:text-cream"
               >
-                Sou menor de 18
+                Ainda não
               </button>
             </div>
             <p className="mt-6 text-xs text-ash/60">
-              O consumo de produtos com tabaco é prejudicial à saúde. Venda proibida para menores de 18 anos.
+              Tabaco e bebida alcoólica: proibido pra menor de 18 anos.
             </p>
           </>
         ) : (
           <p className="mt-8 leading-relaxed text-ash">
-            Tudo bem — este espaço é exclusivo para maiores de 18 anos.
-            Volte quando completar a maioridade. Te esperamos! 🌙
+            Opa, então não rola por aqui. Volta quando fizer 18 e a gente tá esperando!
           </p>
         )}
       </div>

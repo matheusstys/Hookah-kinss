@@ -2,10 +2,10 @@ import { useReveal } from '../hooks/useReveal'
 import { Cocktail, Music, Sparkle, Users } from '../icons'
 
 const features = [
-  { icon: <Cocktail className="h-6 w-6" />, title: 'Drinks autorais', desc: 'Coquetelaria pensada com calma, clássicos bem feitos e novidades da casa.' },
-  { icon: <Music className="h-6 w-6" />, title: 'Som na medida', desc: 'A trilha certa pra conversar sem gritar — e dançar quando a noite pede.' },
-  { icon: <Sparkle className="h-6 w-6" />, title: 'Ambiente', desc: 'Luz baixa, lugares confortáveis e aquele clima que faz a noite render.' },
-  { icon: <Users className="h-6 w-6" />, title: 'Pra sua turma', desc: 'Espaço pra rolê em grupo, aniversário ou só um happy hour que vira madrugada.' },
+  { icon: <Cocktail className="h-6 w-6" />, title: 'Bebidas geladas', desc: 'Drinks, doses, cervejas e o que você precisar pra acompanhar a noite.' },
+  { icon: <Music className="h-6 w-6" />, title: 'Som no talo', desc: 'Trilha boa, volume certo — pra conversar, fumar e curtir sem estresse.' },
+  { icon: <Sparkle className="h-6 w-6" />, title: 'Clima de tabacaria', desc: 'Ambiente escuro, aconchegante e com aquela vibe que só quem foi entende.' },
+  { icon: <Users className="h-6 w-6" />, title: 'Vem com a galera', desc: 'Aniversário, happy hour ou só um rolê sem compromisso — tá tudo certo aqui.' },
 ]
 
 export default function Experiencia() {
@@ -14,9 +14,9 @@ export default function Experiencia() {
     <section id="experiencia" className="relative py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div ref={head.ref} className={`reveal ${head.visible ? 'in' : ''} mb-12 max-w-2xl`}>
-          <p className="eyebrow mb-3 text-xs text-ember">a experiência</p>
+          <p className="eyebrow mb-3 text-xs text-ember">o que tem aqui</p>
           <h2 className="font-display text-4xl leading-tight text-cream sm:text-5xl">
-            Mais que sair — é o ponto de encontro da noite.
+            Tudo que você precisa pra uma noite boa.
           </h2>
         </div>
 

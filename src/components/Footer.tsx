@@ -10,7 +10,7 @@ export default function Footer() {
             <img src="/logo.png" alt={config.name} className="h-14 w-auto" />
           </a>
           <p className="mt-3 text-sm leading-relaxed text-ash">
-            {config.tagline} · {config.city}. {config.hours}.
+            O point de Osasco pra fumar, beber e curtir.
           </p>
         </div>
         <div className="flex flex-col gap-3 text-sm">
@@ -25,8 +25,7 @@ export default function Footer() {
       <div className="border-t border-neon/10">
         <div className="mx-auto max-w-6xl px-5 py-5 sm:px-8">
           <p className="text-xs leading-relaxed text-ash/70">
-            Entrada e consumo permitidos apenas para maiores de 18 anos. O consumo de bebidas
-            alcoólicas e de produtos com tabaco é prejudicial à saúde. Beba com moderação; se for dirigir, não beba.
+            Ambiente exclusivo para maiores de 18 anos. Proibido vender bebida alcoólica e tabaco para menor. Se for dirigir, não beba.
           </p>
           <p className="mt-2 text-xs text-ash/60">
             © {new Date().getFullYear()} {config.name}. Todos os direitos reservados.

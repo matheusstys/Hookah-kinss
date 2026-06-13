@@ -12,13 +12,13 @@ export default function Hero() {
       <div className="relative mx-auto max-w-6xl px-5 pt-36 pb-20 sm:px-8 sm:pt-44 sm:pb-28">
         <p className="eyebrow text-xs text-ember">{config.tagline} · {config.city}</p>
         <h1 className="mt-5 max-w-4xl font-display text-[3.4rem] leading-[0.95] text-cream sm:text-[6rem]">
-          A noite fica melhor
+          Fuma, bebe
           <br />
-          <span className="italic text-ember">na luz baixa.</span>
+          <span className="italic text-ember">e relaxa.</span>
         </h1>
         <p className="mt-7 max-w-lg text-lg leading-relaxed text-ash">
-          Um cantinho em Osasco para encontrar quem importa: drinks autorais, som
-          na medida e um ambiente pensado pra você ficar até tarde sem ver a hora passar.
+          A Hookah Kinss é o point de Osasco pra fumar um bom narguilé, tomar uma gelada
+          e curtir a noite sem pressa. Cola com a galera e deixa a noite rolar.
         </p>
 
         <div className="mt-9 flex flex-wrap items-center gap-3">

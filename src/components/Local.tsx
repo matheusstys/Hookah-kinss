@@ -12,9 +12,9 @@ export default function Local() {
       >
         <div className="flex flex-col justify-between rounded-3xl border border-line bg-night-2/60 p-8 sm:p-10 lg:flex-row lg:items-end lg:gap-12">
           <div>
-            <p className="eyebrow mb-3 text-xs text-ember">onde estamos</p>
+            <p className="eyebrow mb-3 text-xs text-ember">vem até nós</p>
             <h2 className="font-display text-4xl leading-tight text-cream sm:text-5xl">
-              Te esperamos em Osasco.
+              Cola aqui em Osasco.
             </h2>
             <div className="mt-7 space-y-4 text-ash">
               <p className="flex items-start gap-3">

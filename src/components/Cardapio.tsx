@@ -35,10 +35,10 @@ export default function Cardapio() {
         <div ref={head.ref} className={`reveal ${head.visible ? 'in' : ''} mb-12 max-w-2xl`}>
           <p className="eyebrow mb-3 text-xs text-ember">no cardápio</p>
           <h2 className="font-display text-4xl leading-tight text-cream sm:text-5xl">
-            Pra beber, beliscar e ficar.
+            Fumaça, gole e petisco.
           </h2>
           <p className="mt-3 text-sm text-ash">
-            Uma prévia da casa. Consulte o cardápio completo diretamente no estabelecimento.
+            Uma prévia do que tem aqui. Cardápio completo você vê na hora que chegar.
           </p>
         </div>
 
@@ -59,8 +59,7 @@ export default function Cardapio() {
         </div>
 
         <p className="mt-10 text-xs leading-relaxed text-ash/70">
-          Bebida alcoólica e produtos com tabaco: venda proibida para menores de 18 anos.
-          Se for dirigir, não beba. Aproveite com responsabilidade.
+          Proibido vender bebida alcoólica e tabaco pra menor de 18 anos. Se for dirigir, não beba.
         </p>
       </div>
     </section>
