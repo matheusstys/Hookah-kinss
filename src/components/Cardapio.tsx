@@ -38,7 +38,7 @@ export default function Cardapio() {
             Pra beber, beliscar e ficar.
           </h2>
           <p className="mt-3 text-sm text-ash">
-            Uma prévia da casa. O cardápio completo, com valores, a gente passa no WhatsApp ou na mesa.
+            Uma prévia da casa. Consulte o cardápio completo diretamente no estabelecimento.
           </p>
         </div>
 

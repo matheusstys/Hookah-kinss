@@ -1,5 +1,5 @@
-import { config, mapsUrl, wa } from '../config'
-import { Arrow, Clock, Pin } from '../icons'
+import { config, mapsUrl } from '../config'
+import { Clock, Pin } from '../icons'
 
 export default function Hero() {
   return (
@@ -23,21 +23,12 @@ export default function Hero() {
 
         <div className="mt-9 flex flex-wrap items-center gap-3">
           <a
-            href={wa('Olá! Quero reservar uma mesa na Hookah Kinss.')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 rounded-full bg-neon px-7 py-4 font-semibold text-night transition hover:bg-neon-deep"
-          >
-            Reservar minha mesa
-            <Arrow className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-          </a>
-          <a
             href={mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-line px-7 py-4 font-semibold text-cream transition hover:border-ember"
+            className="inline-flex items-center gap-2 rounded-full bg-neon px-7 py-4 font-semibold text-night transition hover:bg-neon-deep"
           >
-            <Pin className="h-5 w-5 text-ember" />
+            <Pin className="h-5 w-5" />
             Como chegar
           </a>
         </div>

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { wa } from '../config'
 import { Menu, X } from '../icons'
 
 const links = [
@@ -50,14 +49,6 @@ export default function Nav() {
         </ul>
 
         <div className="flex items-center gap-3">
-          <a
-            href={wa('Olá! Quero reservar uma mesa na Hookah Kinss.')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden rounded-full border border-neon/50 px-5 py-2 text-sm font-semibold text-neon transition hover:bg-neon hover:text-night sm:inline-flex"
-          >
-            Reservar
-          </a>
           <button
             onClick={() => setOpen((o) => !o)}
             className="grid h-9 w-9 place-items-center text-ash transition hover:text-neon md:hidden"
@@ -83,14 +74,6 @@ export default function Nav() {
               </li>
             ))}
           </ul>
-          <a
-            href={wa('Olá! Quero reservar uma mesa na Hookah Kinss.')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 inline-flex rounded-full border border-neon/50 px-6 py-3 text-sm font-semibold text-neon transition hover:bg-neon hover:text-night"
-          >
-            Reservar uma mesa
-          </a>
         </div>
       )}
     </nav>

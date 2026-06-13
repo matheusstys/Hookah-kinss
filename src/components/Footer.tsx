@@ -1,5 +1,5 @@
-import { config, ig, mapsUrl, wa } from '../config'
-import { Insta, Pin, Whats } from '../icons'
+import { config, ig, mapsUrl } from '../config'
+import { Insta, Pin } from '../icons'
 
 export default function Footer() {
   return (
@@ -16,9 +16,6 @@ export default function Footer() {
         <div className="flex flex-col gap-3 text-sm">
           <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-cream transition hover:text-ember">
             <Pin className="h-4 w-4" /> {config.address}
-          </a>
-          <a href={wa('Olá!')} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-cream transition hover:text-ember">
-            <Whats className="h-4 w-4" /> {config.phoneDisplay}
           </a>
           <a href={ig} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-cream transition hover:text-ember">
             <Insta className="h-4 w-4" /> @{config.instagram}
