@@ -86,6 +86,13 @@ export function Menu({ className }: IconProps) {
     </svg>
   )
 }
+export function IFood({ className }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M19 7h-1V6a6 6 0 1 0-12 0v1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Zm-9-1a3 3 0 1 1 6 0v1h-6V6Zm2 9v2a1 1 0 1 1-2 0v-2a1.5 1.5 0 1 1 2 0Z" />
+    </svg>
+  )
+}
 export function X({ className }: IconProps) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">

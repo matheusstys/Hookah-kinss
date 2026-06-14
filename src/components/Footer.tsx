@@ -1,5 +1,5 @@
-import { config, ig, mapsUrl } from '../config'
-import { Insta, Pin } from '../icons'
+import { config, ig, mapsUrl, ifoodUrl } from '../config'
+import { IFood, Insta, Pin } from '../icons'
 
 export default function Footer() {
   return (
@@ -19,6 +19,9 @@ export default function Footer() {
           </a>
           <a href={ig} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-cream transition hover:text-ember">
             <Insta className="h-4 w-4" /> @{config.instagram}
+          </a>
+          <a href={ifoodUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-cream transition hover:text-[#EA1D2C]">
+            <IFood className="h-4 w-4" /> iFood
           </a>
         </div>
       </div>

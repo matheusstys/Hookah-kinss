@@ -1,5 +1,5 @@
-import { config, mapsUrl } from '../config'
-import { Clock, Pin } from '../icons'
+import { config, mapsUrl, ifoodUrl } from '../config'
+import { Clock, Pin, IFood } from '../icons'
 
 export default function Hero() {
   return (
@@ -30,6 +30,15 @@ export default function Hero() {
           >
             <Pin className="h-5 w-5" />
             Como chegar
+          </a>
+          <a
+            href={ifoodUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[#EA1D2C] px-7 py-4 font-semibold text-white transition hover:bg-[#c8101e]"
+          >
+            <IFood className="h-5 w-5" />
+            Peça no iFood
           </a>
         </div>
 
