@@ -11,18 +11,11 @@ const cols = [
     ],
   },
   {
-    title: 'Pra acompanhar',
-    items: [
-      ['Porções & petiscos', '—'],
-      ['Tábuas pra dividir', '—'],
-      ['Opções da cozinha', '—'],
-    ],
-  },
-  {
     title: 'Narguilé',
     items: [
       ['Essências variadas', '18+'],
       ['Atendimento de mesa', '—'],
+      ['Carvão incluso', '—'],
     ],
   },
 ]
@@ -35,14 +28,14 @@ export default function Cardapio() {
         <div ref={head.ref} className={`reveal ${head.visible ? 'in' : ''} mb-12 max-w-2xl`}>
           <p className="eyebrow mb-3 text-xs text-ember">no cardápio</p>
           <h2 className="font-display text-4xl leading-tight text-cream sm:text-5xl">
-            Fumaça, gole e petisco.
+            Fumaça, gole e drink.
           </h2>
           <p className="mt-3 text-sm text-ash">
             Uma prévia do que tem aqui. Cardápio completo você vê na hora que chegar.
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2">
           {cols.map((c) => (
             <div key={c.title}>
               <h3 className="mb-4 font-display text-2xl text-ember">{c.title}</h3>
