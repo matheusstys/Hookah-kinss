@@ -1,7 +1,7 @@
 import { useReveal } from '../hooks/useReveal'
 import Carousel from './Carousel'
 
-const VIDEO_SRC = '/WhatsApp%20Video%202026-06-14%20at%2020.47.34.mp4'
+const VIDEO_SRC  = '/Dj%20Francis.mp4'
 const VIDEO2_SRC = '/video%20copa.mp4'
 
 const shots = [
@@ -45,7 +45,7 @@ export default function Galeria() {
   const head = useReveal()
 
   const slides = [
-    <VideoTile key="video" src={VIDEO_SRC} label="O rolê" />,
+    <VideoTile key="video" src={VIDEO_SRC} label="Dj Francis" />,
     <VideoTile key="video2" src={VIDEO2_SRC} label="A copa" />,
     ...shots.map((s) => <Tile key={s.src} {...s} />),
   ]
