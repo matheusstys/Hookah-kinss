@@ -70,7 +70,7 @@ export default function Cardapio() {
       <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
         <div ref={head.ref} className={`reveal ${head.visible ? 'in' : ''} mb-12 max-w-2xl`}>
           <p className="eyebrow mb-3 text-xs text-ember">no cardápio</p>
-          <h2 className="font-display text-4xl leading-tight text-cream sm:text-5xl">
+          <h2 className="font-display text-5xl leading-tight text-cream sm:text-7xl">
             Fumaça, gole e drink.
           </h2>
           <p className="mt-3 text-sm text-ash">
@@ -86,7 +86,7 @@ export default function Cardapio() {
                 {c.items.map(([name, tag]) => (
                   <li key={name} className="flex items-baseline justify-between gap-3 border-b border-line/60 pb-3" style={{ fontFamily: "'Poppins', sans-serif" }}>
                     <span className="text-cream">{name}</span>
-                    <span className="shrink-0 text-xs uppercase tracking-wider text-ash">{tag}</span>
+                    <span className="shrink-0 text-xs uppercase tracking-wider text-cream">{tag}</span>
                   </li>
                 ))}
               </ul>
