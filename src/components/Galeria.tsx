@@ -2,21 +2,17 @@ import { useReveal } from '../hooks/useReveal'
 import Carousel from './Carousel'
 
 const shots = [
-  { label: 'O salão', tint: 'from-ember/30' },
-  { label: 'Balcão & drinks', tint: 'from-neon/30' },
-  { label: 'O narguilé', tint: 'from-ember/25' },
-  { label: 'Noites de DJ', tint: 'from-neon/25' },
-  { label: 'Área externa', tint: 'from-ember/30' },
+  { src: '/lado%20de%20dentro.jpeg', label: 'Por dentro' },
+  { src: '/luz%20baixa.jpeg',        label: 'O clima' },
+  { src: '/lado%20de%20fora.jpeg',   label: 'A fachada' },
 ]
 
-function Tile({ label, tint }: { label: string; tint: string }) {
+function Tile({ src, label }: { src: string; label: string }) {
   return (
     <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-line">
-      <div className={`absolute inset-0 bg-gradient-to-t ${tint} via-night-2 to-night`} />
-      <div className="absolute inset-0 grid place-items-center">
-        <span className="font-display text-xl italic text-cream/40">foto</span>
-      </div>
-      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-night to-transparent p-5">
+      <img src={src} alt={label} className="absolute inset-0 h-full w-full object-cover" />
+      <div className="absolute inset-0 bg-gradient-to-t from-night/80 via-transparent to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 p-5">
         <p className="font-display text-xl text-cream">{label}</p>
       </div>
     </div>
@@ -36,7 +32,7 @@ export default function Galeria() {
           Arrasta pro lado e vê como é o point.
         </p>
       </div>
-      <Carousel label="Galeria" slides={shots.map((s) => <Tile key={s.label} {...s} />)} />
+      <Carousel label="Galeria" slides={shots.map((s) => <Tile key={s.src} {...s} />)} />
     </section>
   )
 }
