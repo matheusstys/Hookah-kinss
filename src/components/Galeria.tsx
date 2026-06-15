@@ -5,9 +5,17 @@ const VIDEO_SRC  = '/Dj%20Francis.mp4'
 const VIDEO2_SRC = '/video%20copa.mp4'
 
 const shots = [
-  { src: '/lado%20de%20dentro.jpeg', label: 'Por dentro' },
-  { src: '/luz%20baixa.jpeg',        label: 'O clima' },
-  { src: '/lado%20de%20fora.jpeg',   label: 'A fachada' },
+  { src: '/lado%20de%20dentro.jpeg',  label: 'Por dentro' },
+  { src: '/luz%20baixa.jpeg',         label: 'O clima' },
+  { src: '/lado%20de%20fora.jpeg',    label: 'A fachada' },
+  { src: '/caipirinha%201.jpeg',      label: 'Caipirinha' },
+  { src: '/caipirinha%202%20.jpeg',   label: 'Caipirinha' },
+  { src: '/caipirinha%203.jpeg',      label: 'Caipirinha' },
+  { src: '/caipirinha%204.jpeg',      label: 'Caipirinha' },
+  { src: '/caipirinha%205.jpeg',      label: 'Caipirinha' },
+  { src: '/caipirinha%206.jpeg',      label: 'Caipirinha' },
+  { src: '/caipirinha%207.jpeg',      label: 'Caipirinha' },
+  { src: '/caipirinha%208.jpeg',      label: 'Caipirinha' },
 ]
 
 function VideoTile({ src, label }: { src: string; label: string }) {
