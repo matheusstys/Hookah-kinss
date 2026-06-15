@@ -47,6 +47,27 @@ const cols = [
     ],
   },
   {
+    title: 'Dose / Copão',
+    items: [
+      ['Absolut', 'R$ 45'],
+      ['Ballantines', 'R$ 38'],
+      ['Beefeater', 'R$ 45'],
+      ['Beefeater lemon e ginger', 'R$ 50'],
+      ['Black Label', 'R$ 55'],
+      ['Bombay', 'R$ 40'],
+      ['Buchanans', 'R$ 55'],
+      ['Ciroc', 'R$ 65'],
+      ['Jack Daniels', 'R$ 55'],
+      ['Jack Daniels Fire', 'R$ 55'],
+      ['Jack Daniels Honey', 'R$ 55'],
+      ['Jack Daniels Maçã Verde', 'R$ 55'],
+      ['Old Parr', 'R$ 55'],
+      ['Red Label', 'R$ 38'],
+      ['Tanqueray', 'R$ 50'],
+      ['Eternity Dark Berry', 'R$ 25'],
+    ],
+  },
+  {
     title: 'Narguilé',
     items: [
       ['Essências variadas', '18+'],
