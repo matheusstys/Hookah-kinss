@@ -70,7 +70,7 @@ export default function Cardapio() {
       <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
         <div ref={head.ref} className={`reveal ${head.visible ? 'in' : ''} mb-12 max-w-2xl`}>
           <p className="eyebrow mb-3 text-xs text-ember">no cardápio</p>
-          <h2 className="font-display text-5xl leading-tight text-cream sm:text-7xl">
+          <h2 className="font-display text-6xl leading-tight text-cream sm:text-[7rem]">
             Fumaça, gole e drink.
           </h2>
           <p className="mt-3 text-sm text-ash">
