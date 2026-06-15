@@ -84,9 +84,9 @@ export default function Cardapio() {
               <h3 className="mb-4 font-display text-2xl text-ember">{c.title}</h3>
               <ul className="space-y-3">
                 {c.items.map(([name, tag]) => (
-                  <li key={name} className="flex items-baseline justify-between gap-3 border-b border-line/60 pb-3">
+                  <li key={name} className="flex items-baseline justify-between gap-3 border-b border-line/60 pb-3" style={{ fontFamily: "'Poppins', sans-serif" }}>
                     <span className="text-cream">{name}</span>
-                    <span className="shrink-0 font-body text-xs uppercase tracking-wider text-ash">{tag}</span>
+                    <span className="shrink-0 text-xs uppercase tracking-wider text-ash">{tag}</span>
                   </li>
                 ))}
               </ul>
