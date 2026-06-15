@@ -65,7 +65,7 @@ export default function Cardapio() {
         src="/logo.png"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute -right-16 top-1/2 w-[560px] -translate-y-1/2 select-none mix-blend-screen opacity-60"
+        className="pointer-events-none absolute left-1/2 top-1/2 w-[560px] -translate-x-1/2 -translate-y-1/2 select-none mix-blend-screen opacity-60"
         style={{ filter: 'invert(1) sepia(1) saturate(8) hue-rotate(170deg) drop-shadow(0 0 18px #00C2FF)' }}
       />
       <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
