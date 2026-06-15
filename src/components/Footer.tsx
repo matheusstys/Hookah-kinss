@@ -1,5 +1,5 @@
-import { config, ig, mapsUrl, ifoodUrl } from '../config'
-import { IFood, Insta, Pin } from '../icons'
+import { config, ig, mapsUrl, ifoodUrl, wa } from '../config'
+import { IFood, Insta, Pin, Whats } from '../icons'
 
 export default function Footer() {
   return (
@@ -22,6 +22,9 @@ export default function Footer() {
           </a>
           <a href={ifoodUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-cream transition hover:text-[#EA1D2C]">
             <IFood className="h-4 w-4" /> iFood
+          </a>
+          <a href={wa('Olá! Vi o site de vocês e quero saber mais.')} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-cream transition hover:text-[#25D366]">
+            <Whats className="h-4 w-4" /> {config.phoneDisplay}
           </a>
         </div>
       </div>

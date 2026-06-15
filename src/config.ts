@@ -1,7 +1,7 @@
 export const config = {
   name: 'Hookah Kinss',
   tagline: 'Bar & Tabacaria',
-  whatsappDigits: 'SEUWHATSAPP', // só números com DDD: ex. 11999998888
+  whatsappDigits: '11976151158',
   phoneDisplay: '(11) 976151158 ',
   instagram: 'hookahkins',
   address: 'Av. Analice Sakatauskas, 414',
