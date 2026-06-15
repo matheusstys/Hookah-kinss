@@ -6,6 +6,7 @@ import Experiencia from './components/Experiencia'
 import Galeria from './components/Galeria'
 import Cardapio from './components/Cardapio'
 import Local from './components/Local'
+import InstagramCTA from './components/InstagramCTA'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -31,6 +32,7 @@ export default function App() {
         <Hero />
         <Experiencia />
         <Galeria />
+        <InstagramCTA />
         <Cardapio />
         <Local />
       </main>
