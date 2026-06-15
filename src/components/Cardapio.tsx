@@ -2,12 +2,28 @@ import { useReveal } from '../hooks/useReveal'
 
 const cols = [
   {
-    title: 'Drinks & Coquetéis',
+    title: 'Caipirinhas 700ml',
     items: [
-      ['Caipirinhas & autorais', 'da casa'],
-      ['Gin tônicas especiais', '—'],
-      ['Doses & combos', '—'],
-      ['Sem álcool / mocktails', '—'],
+      ['Caipirinha de Ballena com Crok', 'R$ 60'],
+      ['Caipirinha de caju c/ limão', 'R$ 35'],
+    ],
+  },
+  {
+    title: 'Refrigerantes & Sucos',
+    items: [
+      ['Coca-Cola Lata 350ml', 'R$ 7'],
+      ['Coca-Cola Zero Lata 350ml', 'R$ 7'],
+      ['Fanta Laranja Lata 350ml', 'R$ 7'],
+      ['Fanta Uva Lata 350ml', 'R$ 7'],
+      ['Guaraná Antarctica Lata 350ml', 'R$ 7'],
+      ['Schweppes Citrus Lata 350ml', 'R$ 8'],
+      ['Del Valle Manga 290ml', 'R$ 7'],
+      ['Del Valle Uva 290ml', 'R$ 6'],
+      ['Del Valle Maracujá 290ml', 'R$ 6'],
+      ['Fanta Laranja 2l', 'R$ 18'],
+      ['Fanta Uva 2l', 'R$ 18'],
+      ['Coca-Cola 2l (pack 4un)', 'R$ 20'],
+      ['Água Crystal Sem Gás 500ml', 'R$ 5'],
     ],
   },
   {
@@ -35,7 +51,7 @@ export default function Cardapio() {
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid gap-8 sm:grid-cols-3">
           {cols.map((c) => (
             <div key={c.title}>
               <h3 className="mb-4 font-display text-2xl text-ember">{c.title}</h3>
