@@ -46,7 +46,7 @@ export default function Galeria() {
 
   const slides = [
     <VideoTile key="video" src={VIDEO_SRC} label="Dj Francis" />,
-    <VideoTile key="video2" src={VIDEO2_SRC} label="A copa" />,
+    <VideoTile key="video2" src={VIDEO2_SRC} label="Copa 2026" />,
     ...shots.map((s) => <Tile key={s.src} {...s} />),
   ]
 
