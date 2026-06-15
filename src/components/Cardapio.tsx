@@ -86,7 +86,7 @@ export default function Cardapio() {
         src="/ChatGPT%20Image%2014%20de%20jun.%20de%202026%2C%2022_34_59.png"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 h-full w-full select-none object-contain opacity-[0.10]"
+        className="pointer-events-none absolute inset-0 hidden h-full w-full select-none object-contain opacity-[0.10] sm:block"
       />
       <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
         <div ref={head.ref} className={`reveal ${head.visible ? 'in' : ''} mb-12 max-w-2xl`}>
