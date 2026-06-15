@@ -10,45 +10,59 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-night to-transparent" />
 
       <div className="relative mx-auto max-w-6xl px-5 pt-36 pb-20 sm:px-8 sm:pt-44 sm:pb-28">
-        <p className="eyebrow text-xs text-ember">{config.tagline} · {config.city}</p>
-        <h1 className="mt-5 max-w-4xl font-display text-[3.4rem] leading-[0.95] text-cream sm:text-[6rem]">
-          Fuma, bebe
-          <br />
-          <span className="italic text-ember">e relaxa.</span>
-        </h1>
-        <p className="mt-7 max-w-lg text-lg leading-relaxed text-ash">
-          A Hookah Kinss é o point de Osasco pra fumar um bom narguilé, tomar uma gelada
-          e curtir a noite sem pressa. Cola com a galera e deixa a noite rolar.
-        </p>
+        <div className="flex items-center justify-between gap-8">
+          {/* left: copy */}
+          <div className="flex-1">
+            <p className="eyebrow text-xs text-ember">{config.tagline} · {config.city}</p>
+            <h1 className="mt-5 max-w-4xl font-display text-[3.4rem] leading-[0.95] text-cream sm:text-[6rem]">
+              Fuma, bebe
+              <br />
+              <span className="italic text-ember">e relaxa.</span>
+            </h1>
+            <p className="mt-7 max-w-lg text-lg leading-relaxed text-ash">
+              A Hookah Kinss é o point de Osasco pra fumar um bom narguilé, tomar uma gelada
+              e curtir a noite sem pressa. Cola com a galera e deixa a noite rolar.
+            </p>
 
-        <div className="mt-9 flex flex-wrap items-center gap-3">
-          <a
-            href={mapsUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-neon px-7 py-4 font-semibold text-night transition hover:bg-neon-deep"
-          >
-            <Pin className="h-5 w-5" />
-            Como chegar
-          </a>
-          <a
-            href={ifoodUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-[#EA1D2C] px-7 py-4 font-semibold text-white transition hover:bg-[#c8101e]"
-          >
-            <IFood className="h-5 w-5" />
-            Peça no iFood
-          </a>
-        </div>
+            <div className="mt-9 flex flex-wrap items-center gap-3">
+              <a
+                href={mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-neon px-7 py-4 font-semibold text-night transition hover:bg-neon-deep"
+              >
+                <Pin className="h-5 w-5" />
+                Como chegar
+              </a>
+              <a
+                href={ifoodUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-[#EA1D2C] px-7 py-4 font-semibold text-white transition hover:bg-[#c8101e]"
+              >
+                <IFood className="h-5 w-5" />
+                Peça no iFood
+              </a>
+            </div>
 
-        <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-ash">
-          <span className="flex items-center gap-2">
-            <Pin className="h-4 w-4 text-ember" /> {config.address} — {config.city}
-          </span>
-          <span className="flex items-center gap-2">
-            <Clock className="h-4 w-4 text-ember" /> {config.hours}
-          </span>
+            <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-ash">
+              <span className="flex items-center gap-2">
+                <Pin className="h-4 w-4 text-ember" /> {config.address} — {config.city}
+              </span>
+              <span className="flex items-center gap-2">
+                <Clock className="h-4 w-4 text-ember" /> {config.hours}
+              </span>
+            </div>
+          </div>
+
+          {/* right: logo grande */}
+          <div className="hidden lg:block shrink-0">
+            <img
+              src="/logo.png"
+              alt={config.name}
+              className="w-[340px] animate-neon-pulse drop-shadow-[0_0_40px_#00C2FF60]"
+            />
+          </div>
         </div>
       </div>
     </header>
