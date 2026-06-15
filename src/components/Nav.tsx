@@ -29,7 +29,7 @@ export default function Nav() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 sm:px-8">
         <a href="#" className="flex items-center">
           <img
-            src="/logo.png"
+            src="/ChatGPT%20Image%2014%20de%20jun.%20de%202026%2C%2022_34_59.png"
             alt="Hookah Kinss"
             className="h-12 w-auto animate-neon-pulse"
           />

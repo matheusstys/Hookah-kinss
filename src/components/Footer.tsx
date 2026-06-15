@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-5 py-12 sm:px-8 md:flex-row md:items-start md:justify-between">
         <div className="max-w-xs">
           <a href="#" className="flex items-center">
-            <img src="/logo.png" alt={config.name} className="h-14 w-auto" />
+            <img src="/ChatGPT%20Image%2014%20de%20jun.%20de%202026%2C%2022_34_59.png" alt={config.name} className="h-14 w-auto" />
           </a>
           <p className="mt-3 text-sm leading-relaxed text-ash">
             O point de Osasco pra fumar, beber e curtir.

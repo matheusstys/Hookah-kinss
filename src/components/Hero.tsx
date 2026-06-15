@@ -58,7 +58,7 @@ export default function Hero() {
           {/* right: logo grande */}
           <div className="hidden lg:block shrink-0">
             <img
-              src="/logo.png"
+              src="/ChatGPT%20Image%2014%20de%20jun.%20de%202026%2C%2022_34_59.png"
               alt={config.name}
               className="w-[340px] animate-neon-pulse drop-shadow-[0_0_40px_#00C2FF60]"
             />
