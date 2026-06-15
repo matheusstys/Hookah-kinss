@@ -59,8 +59,15 @@ const cols = [
 export default function Cardapio() {
   const head = useReveal()
   return (
-    <section id="cardapio" className="border-y border-neon/15 bg-night-2/40 py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+    <section id="cardapio" className="relative overflow-hidden border-y border-neon/15 bg-night-2/40 py-20 sm:py-28">
+      {/* logo watermark */}
+      <img
+        src="/logo.png"
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-24 top-1/2 w-[480px] -translate-y-1/2 select-none opacity-[0.04]"
+      />
+      <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
         <div ref={head.ref} className={`reveal ${head.visible ? 'in' : ''} mb-12 max-w-2xl`}>
           <p className="eyebrow mb-3 text-xs text-ember">no cardápio</p>
           <h2 className="font-display text-4xl leading-tight text-cream sm:text-5xl">
@@ -94,3 +101,4 @@ export default function Cardapio() {
     </section>
   )
 }
+
