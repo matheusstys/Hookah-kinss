@@ -62,7 +62,7 @@ export default function Galeria() {
     <section id="galeria" className="py-20 sm:py-28">
       <div ref={head.ref} className={`reveal ${head.visible ? 'in' : ''} mx-auto mb-12 max-w-6xl px-5 sm:px-8`}>
         <p className="eyebrow mb-3 text-xs text-ember">o clima</p>
-        <h2 className="max-w-2xl font-display text-4xl leading-tight text-cream sm:text-5xl">
+        <h2 className="max-w-2xl font-display text-3xl leading-tight text-cream sm:text-5xl">
           Dá uma espiadinha antes de chegar.
         </h2>
         <p className="mt-3 text-sm text-ash">

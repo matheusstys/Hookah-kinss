@@ -10,10 +10,10 @@ export default function Local() {
         ref={r.ref}
         className={`reveal ${r.visible ? 'in' : ''} mx-auto max-w-6xl px-5 sm:px-8`}
       >
-        <div className="flex flex-col justify-between rounded-3xl border border-line bg-night-2/60 p-8 sm:p-10 lg:flex-row lg:items-end lg:gap-12">
+        <div className="flex flex-col justify-between rounded-3xl border border-line bg-night-2/60 p-6 sm:p-10 lg:flex-row lg:items-end lg:gap-12">
           <div>
             <p className="eyebrow mb-3 text-xs text-ember">vem até nós</p>
-            <h2 className="font-display text-4xl leading-tight text-cream sm:text-5xl">
+            <h2 className="font-display text-3xl leading-tight text-cream sm:text-5xl">
               Cola aqui em Osasco.
             </h2>
             <div className="mt-7 space-y-4 text-ash">
@@ -31,7 +31,7 @@ export default function Local() {
             href={mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="group mt-8 inline-flex items-center gap-2 self-start rounded-full bg-neon px-7 py-4 font-semibold text-night transition hover:bg-neon-deep lg:mt-0 lg:shrink-0"
+            className="group mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-neon px-7 py-4 font-semibold text-night transition hover:bg-neon-deep sm:w-auto sm:self-start lg:mt-0 lg:shrink-0"
           >
             Abrir no Google Maps
             <Arrow className="h-5 w-5 transition-transform group-hover:translate-x-1" />

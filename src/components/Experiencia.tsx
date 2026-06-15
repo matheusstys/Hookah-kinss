@@ -15,7 +15,7 @@ export default function Experiencia() {
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div ref={head.ref} className={`reveal ${head.visible ? 'in' : ''} mb-12 max-w-2xl`}>
           <p className="eyebrow mb-3 text-xs text-ember">o que tem aqui</p>
-          <h2 className="font-display text-4xl leading-tight text-cream sm:text-5xl">
+          <h2 className="font-display text-3xl leading-tight text-cream sm:text-5xl">
             Tudo que você precisa pra uma noite boa.
           </h2>
         </div>
