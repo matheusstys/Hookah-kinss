@@ -59,7 +59,7 @@ const cols = [
 export default function Cardapio() {
   const head = useReveal()
   return (
-    <section id="cardapio" className="relative overflow-hidden border-y border-neon/15 bg-white py-20 sm:py-28">
+    <section id="cardapio" className="relative overflow-hidden border-y border-black/20 bg-white py-20 sm:py-28">
       {/* logo watermark — cobre toda a seção, cresce com o conteúdo */}
       <img
         src="/logo.png"
@@ -84,7 +84,7 @@ export default function Cardapio() {
               <h3 className="mb-4 font-display text-2xl text-ember">{c.title}</h3>
               <ul className="space-y-3">
                 {c.items.map(([name, tag]) => (
-                  <li key={name} className="flex items-baseline justify-between gap-3 border-b border-black/10 pb-3">
+                  <li key={name} className="flex items-baseline justify-between gap-3 border-b border-black/25 pb-3">
                     <span className="text-black">{name}</span>
                     <span className="shrink-0 font-body text-xs uppercase tracking-wider text-black/50">{tag}</span>
                   </li>
