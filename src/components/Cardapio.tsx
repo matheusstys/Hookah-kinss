@@ -4,8 +4,28 @@ const cols = [
   {
     title: 'Caipirinhas 700ml',
     items: [
-      ['Caipirinha de Ballena com Crok', 'R$ 60'],
-      ['Caipirinha de caju c/ limão', 'R$ 35'],
+      ['Ballena com Crok', 'R$ 60'],
+      ['Caju c/ limão', 'R$ 35'],
+      ['Frutas verdes', 'R$ 35'],
+      ['Kiwi', 'R$ 35'],
+      ['Limão', 'R$ 35'],
+      ['Maracujá', 'R$ 35'],
+      ['Melancia', 'R$ 35'],
+      ['Morango', 'R$ 35'],
+      ['Morango c/ abacaxi', 'R$ 35'],
+      ['Morango c/ limão', 'R$ 35'],
+      ['Morango com kiwi', 'R$ 35'],
+    ],
+  },
+  {
+    title: 'Cervejas',
+    items: [
+      ['Brahma Duplo Malte 269ml', 'R$ 7'],
+      ['Budweiser Long Neck 330ml', 'R$ 11'],
+      ['Budweiser Lata 269ml', 'R$ 6'],
+      ['Heineken Lata 269ml', 'R$ 7'],
+      ['Heineken Zero Long Neck 330ml', 'R$ 13'],
+      ['Amstel Lata 269ml', 'R$ 6'],
     ],
   },
   {
@@ -51,7 +71,7 @@ export default function Cardapio() {
           </p>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {cols.map((c) => (
             <div key={c.title}>
               <h3 className="mb-4 font-display text-2xl text-ember">{c.title}</h3>
