@@ -65,7 +65,7 @@ export default function Cardapio() {
         src="/logo.png"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute -right-24 top-1/2 w-[480px] -translate-y-1/2 select-none opacity-[0.04]"
+        className="pointer-events-none absolute -right-16 top-1/2 w-[560px] -translate-y-1/2 select-none opacity-[0.08] invert"
       />
       <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
         <div ref={head.ref} className={`reveal ${head.visible ? 'in' : ''} mb-12 max-w-2xl`}>
