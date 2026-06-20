@@ -5,8 +5,8 @@ export default function Hero() {
   return (
     <header className="relative overflow-hidden">
       {/* drifting ambient glows */}
-      <div className="animate-drift pointer-events-none absolute -left-20 top-10 h-[26rem] w-[26rem] rounded-full bg-ember/15 blur-[110px]" />
-      <div className="animate-drift-slow pointer-events-none absolute right-0 top-40 h-[22rem] w-[22rem] rounded-full bg-neon/15 blur-[120px]" />
+      <div className="hidden sm:block sm:animate-drift pointer-events-none absolute -left-20 top-10 h-[26rem] w-[26rem] rounded-full bg-ember/15 blur-[110px]" />
+      <div className="hidden sm:block sm:animate-drift-slow pointer-events-none absolute right-0 top-40 h-[22rem] w-[22rem] rounded-full bg-neon/15 blur-[120px]" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-night to-transparent" />
 
       <div className="relative mx-auto max-w-6xl px-5 pt-24 pb-14 sm:px-8 sm:pt-44 sm:pb-28">
@@ -60,7 +60,7 @@ export default function Hero() {
             <img
               src="/ChatGPT%20Image%2014%20de%20jun.%20de%202026%2C%2022_34_59.png"
               alt={config.name}
-              className="w-[340px] animate-neon-pulse drop-shadow-[0_0_40px_#00C2FF60]"
+              className="w-[340px] sm:animate-neon-pulse drop-shadow-[0_0_40px_#00C2FF60]"
             />
           </div>
         </div>

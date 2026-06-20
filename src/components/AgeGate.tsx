@@ -11,10 +11,10 @@ export default function AgeGate({
 }) {
   return (
     <div className="fixed inset-0 z-[100] grid place-items-center bg-night px-6">
-      <div className="pointer-events-none absolute left-1/2 top-1/4 h-80 w-80 -translate-x-1/2 rounded-full bg-neon/10 blur-[100px]" />
-      <div className="pointer-events-none absolute left-1/4 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-ember/10 blur-[100px]" />
+      <div className="pointer-events-none absolute left-1/2 top-1/4 h-80 w-80 -translate-x-1/2 rounded-full bg-neon/10 blur-[100px] hidden sm:block" />
+      <div className="pointer-events-none absolute left-1/4 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-ember/10 blur-[100px] hidden sm:block" />
       <div className="relative w-full max-w-md text-center">
-        <img src="/ChatGPT%20Image%2014%20de%20jun.%20de%202026%2C%2022_34_59.png" alt={config.name} className="mx-auto h-28 w-auto animate-neon-pulse" />
+        <img src="/ChatGPT%20Image%2014%20de%20jun.%20de%202026%2C%2022_34_59.png" alt={config.name} className="mx-auto h-28 w-auto sm:animate-neon-pulse" />
         <p className="eyebrow mt-6 text-[0.7rem] text-ash">{config.tagline}</p>
 
         {!denied ? (

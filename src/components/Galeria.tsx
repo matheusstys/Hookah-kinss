@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import { useReveal } from '../hooks/useReveal'
 import Carousel from './Carousel'
 
@@ -19,14 +20,35 @@ const shots = [
 ]
 
 function VideoTile({ src, label }: { src: string; label: string }) {
+  const containerRef = useRef<HTMLDivElement>(null)
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    const container = containerRef.current
+    const video = videoRef.current
+    if (!container || !video) return
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.src = src
+          video.play().catch(() => {})
+          io.disconnect()
+        }
+      },
+      { rootMargin: '0px 300px 0px 300px', threshold: 0 },
+    )
+    io.observe(container)
+    return () => io.disconnect()
+  }, [src])
+
   return (
-    <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-line">
+    <div ref={containerRef} className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-line">
       <video
-        src={src}
-        autoPlay
+        ref={videoRef}
         muted
         loop
         playsInline
+        preload="none"
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-night/80 via-transparent to-transparent" />

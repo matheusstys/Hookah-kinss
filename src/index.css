@@ -64,6 +64,10 @@
   }
 }
 
+@media (max-width: 639px) {
+  .grain::before { display: none; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.001ms !important;

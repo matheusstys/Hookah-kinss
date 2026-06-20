@@ -6,7 +6,7 @@ export const config = {
   instagram: 'hookahkins',
   address: 'Av. Analice Sakatauskas, 414',
   city: 'Osasco · SP',
-  hours: 'Seg a Seg · a partir das 16h',
+  hours: 'Seg a Seg · a partir das 14h',
 } as const
 
 export const mapsUrl =
