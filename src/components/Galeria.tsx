@@ -9,7 +9,7 @@ const shots = [
   { src: '/lado%20de%20dentro.jpeg',  label: 'Por dentro' },
   { src: '/luz%20baixa.jpeg',         label: 'O clima' },
   { src: '/lado%20de%20fora.jpeg',    label: 'A fachada' },
-  { src: '/caipirinha%201.jpeg',      label: 'Caipirinha de melância com lim' },
+  { src: '/caipirinha%201.jpeg',      label: 'Caipirinha de melância com limão' },
   { src: '/caipirinha%202%20.jpeg',   label: 'Caipirinha' },
   { src: '/caipirinha%203.jpeg',      label: 'Caipirinha' },
   { src: '/caipirinha%204.jpeg',      label: 'Caipirinha' },
