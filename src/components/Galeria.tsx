@@ -9,7 +9,7 @@ const shots = [
   { src: '/lado%20de%20dentro.jpeg',  label: 'Por dentro' },
   { src: '/luz%20baixa.jpeg',         label: 'O clima' },
   { src: '/lado%20de%20fora.jpeg',    label: 'A fachada' },
-  { src: '/caipirinha%201.jpeg',      label: 'Caipirinha' },
+  { src: '/caipirinha%201.jpeg',      label: 'Caipirinha de melância com lim' },
   { src: '/caipirinha%202%20.jpeg',   label: 'Caipirinha' },
   { src: '/caipirinha%203.jpeg',      label: 'Caipirinha' },
   { src: '/caipirinha%204.jpeg',      label: 'Caipirinha' },
@@ -62,7 +62,7 @@ function VideoTile({ src, label }: { src: string; label: string }) {
 function Tile({ src, label }: { src: string; label: string }) {
   return (
     <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-line">
-      <img src={src} alt={label} className="absolute inset-0 h-full w-full object-cover" />
+      <img src={src} alt={label} loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-night/80 via-transparent to-transparent" />
       <div className="absolute inset-x-0 bottom-0 p-5">
         <p className="font-display text-xl text-cream">{label}</p>

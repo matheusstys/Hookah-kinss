@@ -22,7 +22,7 @@ export default function Nav() {
     <nav
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'border-b border-neon/20 bg-night/90 backdrop-blur-md'
+          ? 'border-b border-neon/20 bg-night/95 sm:bg-night/90 sm:backdrop-blur-md'
           : 'border-b border-transparent'
       }`}
     >
@@ -31,7 +31,7 @@ export default function Nav() {
           <img
             src="/ChatGPT%20Image%2014%20de%20jun.%20de%202026%2C%2022_34_59.png"
             alt="Hookah Kinss"
-            className="h-12 w-auto animate-neon-pulse"
+            className="h-12 w-auto sm:animate-neon-pulse"
           />
         </a>
 
@@ -60,7 +60,7 @@ export default function Nav() {
       </div>
 
       {open && (
-        <div className="border-t border-neon/15 bg-night/95 px-5 pb-6 pt-5 backdrop-blur-md md:hidden">
+        <div className="border-t border-neon/15 bg-night px-5 pb-6 pt-5 md:hidden">
           <ul className="flex flex-col gap-5">
             {links.map((l) => (
               <li key={l.label}>
