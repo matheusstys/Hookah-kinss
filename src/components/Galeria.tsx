@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { useReveal } from '../hooks/useReveal'
 import Carousel from './Carousel'
 
@@ -52,10 +53,20 @@ function Tile({ src, label }: { src: string; label: string }) {
 
 export default function Galeria() {
   const head = useReveal()
+  const [isDesktop, setIsDesktop] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia('(min-width: 640px)').matches,
+  )
+
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 640px)')
+    const handler = (e: MediaQueryListEvent) => setIsDesktop(e.matches)
+    mq.addEventListener('change', handler)
+    return () => mq.removeEventListener('change', handler)
+  }, [])
 
   const slides = [
     <VideoTile key="video" src={VIDEO_SRC} label="Dj Francis" />,
-    <VideoTile key="video2" src={VIDEO2_SRC} label="Copa 2026" />,
+    ...(isDesktop ? [<VideoTile key="video2" src={VIDEO2_SRC} label="Copa 2026" />] : []),
     ...shots.map((s) => <Tile key={s.src} {...s} />),
   ]
 
