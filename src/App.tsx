@@ -8,6 +8,7 @@ import Cardapio from './components/Cardapio'
 import Local from './components/Local'
 import InstagramCTA from './components/InstagramCTA'
 import Footer from './components/Footer'
+import WppFloat from './components/WppFloat'
 
 export default function App() {
   const [confirmed, setConfirmed] = useState(false)
@@ -37,6 +38,7 @@ export default function App() {
         <Local />
       </main>
       <Footer />
+      <WppFloat />
     </div>
   )
 }
